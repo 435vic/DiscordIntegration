@@ -1,0 +1,20 @@
+name: DiscordIntegration
+version: '${project.version}'
+main: me.vicoquincis.discordintegration.DiscordIntegration
+api-version: 1.18
+prefix: 'DI'
+authors: [ vicoquincis, haploid ]
+description: Discord Integration Plugin
+commands:
+  api:
+    description: start or stop the REST API for discord integration
+    usage: /api [start|stop|status]
+  msg:
+    description: privately message minecraft or discord users.
+    usage: /msg [username|name#tag] [message]
+  socket:
+    description: manage the socket.io server that manages the discord-minecraft connection.
+    usage: /socket [start|stop|status]
+  mdi:
+    description: manage discord integration features
+    usage: /mdi [ api[start|stop] | socket[start|stop] | status | shutdown]
